@@ -77,13 +77,13 @@ int main(int argc,char * argv[])
 		
 		int c = GetCmd();
 		if (c&CMD_UP)
-			dy--;
-		if (c&CMD_DOWN)
 			dy++;
+		if (c&CMD_DOWN)
+			dy--;
 		if (c&CMD_LEFT)
-			dx++;
-		if (c&CMD_RIGHT)
 			dx--;
+		if (c&CMD_RIGHT)
+			dx++;
 		if (GetAsyncKeyState(VK_SPACE))
 		{
 			dx = 0; 
